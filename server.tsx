@@ -37,6 +37,7 @@ app.use("/", (req, res, next) => {
   res.type("text/html").send(html);
 });
 
-app.listen({ port: 3000 });
+const port = 17123;
+app.listen({ port });
 
-console.log("React SSR App listening on port 3000");
+console.log(`React SSR App listening on port ${port}`);
